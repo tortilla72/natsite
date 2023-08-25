@@ -92,7 +92,7 @@ function watching() {
 }
 
 function cleanDist() {
-  return src('dist')
+  return src('doc')
     .pipe(clean())
 }
 
@@ -106,7 +106,7 @@ function building() {
     'app/js/main.min.js',
     'app/*.html'
   ], { base: 'app' })
-    .pipe(dest('dist'))
+    .pipe(dest('doc'))
 }
 
 exports.styles = styles;
